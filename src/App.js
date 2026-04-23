@@ -19,7 +19,7 @@ function App() {
   const handleRegister = async () => {
 
     const response = await fetch(
-      "http://127.0.0.1:5000/register",
+      "https://bmi-monitor-backend-1.onrender.com/register",
       {
         method: "POST",
         headers: {
@@ -44,7 +44,7 @@ function App() {
   const handleLogin = async () => {
 
     const response = await fetch(
-      "http://127.0.0.1:5000/login",
+      "https://bmi-monitor-backend-1.onrender.com/login",
       {
         method: "POST",
         headers: {
@@ -82,7 +82,7 @@ function App() {
       localStorage.getItem("user_id");
 
     const response = await fetch(
-      "http://127.0.0.1:5000/add-measurement",
+      "https://bmi-monitor-backend-1.onrender.com/add-measurement",
       {
         method: "POST",
         headers: {
@@ -115,7 +115,7 @@ function App() {
       localStorage.getItem("user_id");
 
     setGraphUrl(
-      `http://127.0.0.1:5000/bmi-graph/${user_id}`
+      `https://bmi-monitor-backend-1.onrender.com/bmi-graph/${user_id}`
     );
 
   };
@@ -126,7 +126,7 @@ function App() {
       localStorage.getItem("user_id");
 
     setGraphUrl(
-      `http://127.0.0.1:5000/weight-graph/${user_id}`
+      `https://bmi-monitor-backend-1.onrender.com/weight-graph/${user_id}`
     );
 
   };
